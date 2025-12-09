@@ -1,4 +1,4 @@
-export type Category = "Mango Sticky Rice" | "Pudding Coklat Creamy" | "Pudding Strawberry Fresh" | "Pudding Taro Delight";
+export type Category = "Mango Sticky Rice" | "Pudding Coklat Creamy" | "Pudding Strawberry Fresh";
 
 export interface Product {
     id: string;
@@ -31,15 +31,8 @@ export const menuData: Product[] = [
         name: "Fresh Strawberry Pudding",
         category: "Pudding Strawberry Fresh",
         description: "Pudding susu dengan potongan strawberry segar.",
-        price: 18000,
+        price: 7000,
         image: "/images/strawberry-pudding.png",
     },
-    {
-        id: "ptd-1",
-        name: "Taro Delight Pudding",
-        category: "Pudding Taro Delight",
-        description: "Rasa taro yang unik dan lembut di mulut.",
-        price: 16000,
-        image: "/images/taro-pudding.png",
-    },
+
 ];
