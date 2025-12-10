@@ -45,15 +45,18 @@ export default function ContactPage() {
 
                     <div className="bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
                         <h2 className="text-2xl font-bold text-text-gray mb-6">Send us a Message</h2>
-                        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                        <form className="space-y-6" onSubmit={(e) => {
+                            e.preventDefault();
+                            window.open('https://ig.me/m/mangoblyss', '_blank');
+                        }}>
                             <div className="grid sm:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <label htmlFor="name" className="text-sm font-semibold text-gray-700">Name</label>
                                     <input type="text" id="name" placeholder="Your name" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-mango-orange focus:ring-2 focus:ring-mango-orange/20 outline-none transition-all" />
                                 </div>
                                 <div className="space-y-2">
-                                    <label htmlFor="email" className="text-sm font-semibold text-gray-700">Email</label>
-                                    <input type="email" id="email" placeholder="Your email" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-mango-orange focus:ring-2 focus:ring-mango-orange/20 outline-none transition-all" />
+                                    <label htmlFor="instagram" className="text-sm font-semibold text-gray-700">Instagram Username</label>
+                                    <input type="text" id="instagram" placeholder="@username" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-mango-orange focus:ring-2 focus:ring-mango-orange/20 outline-none transition-all" />
                                 </div>
                             </div>
                             <div className="space-y-2">
